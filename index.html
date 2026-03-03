@@ -3,21 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Kritik Raj is launching soon. Stay tuned.">
+<meta name="description" content="Kritik Raj - Building something powerful. Launching soon.">
 <title>Kritik Raj | Launching Soon</title>
 
 <link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.ico">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+<!-- HERO -->
 <header class="hero">
-    <div class="overlay"></div>
     <div class="hero-content">
-        <h1>Kritik Raj</h1>
-        <p class="tagline">Building something powerful. Launching soon.</p>
+        <h1>Something Powerful Is Coming</h1>
+        <p class="tagline">
+            A platform built for ambition, discipline, and growth.
+        </p>
 
         <div class="countdown">
             <div class="time-box">
@@ -38,9 +39,9 @@
             </div>
         </div>
 
-        <form id="notifyForm">
+        <form id="notifyForm" class="notify-form">
             <input type="email" id="email" placeholder="Enter your email" required>
-            <button type="submit">Get Notified</button>
+            <button type="submit">Join Early Access</button>
         </form>
 
         <p id="message" class="message"></p>
@@ -49,31 +50,37 @@
 
 <!-- VIDEO SECTION -->
 <section class="video-section">
-    <h2>Featured Video</h2>
-    <div class="video-wrapper">
-        <iframe 
-            src="video.mp4" 
-            title="YouTube video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
+    <div class="container">
+        <h2>Preview</h2>
+        <div class="video-wrapper">
+            <video controls playsinline>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </div>
 </section>
 
+<!-- FEATURES -->
 <section class="features">
-    <h2>What’s Coming</h2>
-    <div class="feature-grid">
-        <div class="feature">
-            <h3>Modern Design</h3>
-            <p>Clean, minimal and performance-optimized interface.</p>
-        </div>
-        <div class="feature">
-            <h3>High Performance</h3>
-            <p>Fast loading and fully responsive across all devices.</p>
-        </div>
-        <div class="feature">
-            <h3>Built for Growth</h3>
-            <p>Scalable architecture designed for long-term expansion.</p>
+    <div class="container">
+        <h2>What To Expect</h2>
+
+        <div class="feature-grid">
+            <div class="feature">
+                <h3>Clarity</h3>
+                <p>Focused content built to eliminate distraction and increase execution.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Performance</h3>
+                <p>Fast, responsive, optimized across all devices.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Growth</h3>
+                <p>Systems designed for long-term discipline and measurable progress.</p>
+            </div>
         </div>
     </div>
 </section>
