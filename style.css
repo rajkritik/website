@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
     background: #0f172a;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
     position: relative;
     height: 100vh;
@@ -38,8 +38,8 @@ body {
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+    font-size: 3.5rem;
+    font-weight: 800;
 }
 
 .tagline {
@@ -57,18 +57,14 @@ body {
 
 .time-box {
     background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
     padding: 15px 20px;
-    border-radius: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
 }
 
-.time-box span {
-    font-size: 1.8rem;
-    display: block;
-}
-
-.time-box small {
-    font-size: 0.8rem;
-    color: #ddd;
+.time-box:hover {
+    transform: translateY(-5px);
 }
 
 /* FORM */
@@ -78,19 +74,19 @@ form {
 }
 
 input {
-    padding: 12px;
+    padding: 14px;
     border: none;
     width: 60%;
-    border-radius: 6px 0 0 6px;
+    border-radius: 10px 0 0 10px;
 }
 
 button {
-    padding: 12px 20px;
+    padding: 14px 20px;
     border: none;
     background: #0ea5e9;
     color: white;
     cursor: pointer;
-    border-radius: 0 6px 6px 0;
+    border-radius: 0 10px 10px 0;
     transition: 0.3s;
 }
 
@@ -98,27 +94,48 @@ button:hover {
     background: #0284c7;
 }
 
-.message {
-    margin-top: 10px;
-    min-height: 20px;
-}
-
-/* FEATURES SECTION */
-.features {
-    padding: 80px 20px;
+/* VIDEO SECTION */
+.video-section {
+    padding: 100px 20px;
     text-align: center;
     background: #111827;
 }
 
-.features h2 {
-    margin-bottom: 40px;
-    font-size: 2rem;
+.video-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.video-wrapper {
+    max-width: 900px;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    transition: 0.4s ease;
+}
+
+.video-wrapper:hover {
+    transform: scale(1.02);
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+/* FEATURES */
+.features {
+    padding: 80px 20px;
+    text-align: center;
+    background: #0f172a;
 }
 
 .feature-grid {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
     flex-wrap: wrap;
 }
 
@@ -130,7 +147,7 @@ button:hover {
 footer {
     padding: 20px;
     text-align: center;
-    background: #0f172a;
+    background: #111827;
     color: #aaa;
 }
 
@@ -141,7 +158,13 @@ footer {
     100% { background-position: 0% 50%; }
 }
 
+/* MOBILE */
 @media (max-width: 768px) {
+
+    .video-wrapper iframe {
+        height: 250px;
+    }
+
     .countdown {
         flex-wrap: wrap;
     }
@@ -152,7 +175,7 @@ footer {
 
     input, button {
         width: 100%;
-        border-radius: 6px;
+        border-radius: 10px;
         margin-bottom: 10px;
     }
 }
