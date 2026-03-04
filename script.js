@@ -1,5 +1,7 @@
 const launchDate = new Date("July 1, 2026 00:00:00").getTime();
 
+alert("Welcome!");
+
 setInterval(() => {
     const now = new Date().getTime();
     const distance = launchDate - now;
@@ -27,4 +29,5 @@ form.addEventListener("submit", function(e) {
     e.preventDefault();
     message.textContent = "You're on the list. See you at launch.";
     form.reset();
+
 });
