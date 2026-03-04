@@ -1,6 +1,6 @@
-const launchDate = new Date("July 1, 2026 00:00:00").getTime();
-
 alert("Welcome!");
+
+const launchDate = new Date("July 1, 2026 00:00:00").getTime();
 
 setInterval(() => {
     const now = new Date().getTime();
@@ -31,3 +31,4 @@ form.addEventListener("submit", function(e) {
     form.reset();
 
 });
+
